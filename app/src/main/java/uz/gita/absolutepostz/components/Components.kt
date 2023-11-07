@@ -17,6 +17,9 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Divider
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -32,6 +35,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -300,7 +304,7 @@ fun Diagram() {
 
     LineChart(
         modifier = Modifier
-            .padding(horizontal = 4 .dp)
+            .padding(horizontal = 4.dp)
             .fillMaxWidth()
             .background(Color.White)
             .height(280.dp),
@@ -316,3 +320,31 @@ fun DiagramPreview() {
 }
 
 
+@Composable
+fun DropDown(){
+
+
+
+
+    Column {
+        /*OutlinedTextField(
+            value = TextFieldValue(selectedOption),
+            onValueChange = {
+                selectedOption = it.text
+            },
+            label = {
+                Text(text = "Select an option")
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+        )*/
+
+
+    }
+}
+
+@Preview
+@Composable
+fun DropDownPreview() {
+    DropDown()
+}
